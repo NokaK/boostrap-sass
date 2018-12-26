@@ -1,0 +1,24 @@
+@mixin display($property) {
+    display:$property;
+}
+
+@mixin flex ($justify-content, $align-items) {
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
+@mixin border ($size, $type, $color) {
+    border:$size $type $color;
+}
+@mixin box1 ($size) {
+    @if box1 == 100px {
+        background: $color02;
+        border:$border1;
+    }@else if box1 == 200px{
+        background: $color03;
+        border:$border3;
+    }
+    @else {
+        background: $color01;
+        border:$border2;
+    }
+}
